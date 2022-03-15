@@ -1,0 +1,83 @@
+.songti{
+    font-family: SimSun;
+}
+.heiti{
+    font-family: SimHei;
+}
+.kaiti{
+    font-family: KaiTi;
+}
+.yahei{
+    font-family: Microsoft Yahei;
+}
+.yahei-light{
+    font-family: Microsoft Yahei Light;
+}
+
+.chuhao{
+    font-size: 42pt;
+}
+
+.xiaochu{
+    font-size: 36pt;
+}
+
+.yihao{
+    font-size: 26pt;
+}
+
+.xiaoyi{
+    font-size: 24pt;
+}
+
+.erhao{
+    font-size: 22pt;
+}
+
+.xiaoer{
+    font-size: 18pt;
+}
+
+.sanhao{
+    font-size: 16pt;
+}
+
+.xiaosan{
+    font-size: 15pt;
+}
+
+.sihao{
+    font-size: 14pt;
+}
+
+.xiaosi{
+    font-size: 12pt;
+}
+
+.wuhao{
+    font-size: 10.5pt;
+}
+
+.xiaowu{
+    font-size: 9pt;
+}
+
+.liuhao{
+    font-size: 7.5pt;
+}
+
+.xiaoliu{
+    font-size: 6.5pt;
+}
+
+.qihao{
+    font-size: 5.5pt;
+}
+
+.bahao{
+    font-size: 5pt;
+}
+
+.bold{
+    font: bold;
+}
