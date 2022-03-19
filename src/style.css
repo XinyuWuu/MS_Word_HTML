@@ -468,46 +468,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .ml-\[2em\] {
   margin-left: 2em;
-}
-
-.ml-\[4em\] {
-  margin-left: 4em;
 }
 
 .mt-8 {
@@ -522,77 +484,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
-.grid {
-  display: grid;
-}
-
-.w-1 {
-  width: 0.25rem;
-}
-
-.w-1\/4 {
-  width: 25%;
+.table {
+  display: table;
 }
 
 .w-1\/2 {
   width: 50%;
 }
 
-.origin-center {
-  transform-origin: center;
-}
-
-.snap-center {
-  scroll-snap-align: center;
-}
-
-.place-content-center {
-  place-content: center;
-}
-
-.items-center {
-  align-items: center;
-}
-
 .justify-center {
   justify-content: center;
 }
 
-.justify-items-center {
-  justify-items: center;
-}
-
-.place-self-center {
-  place-self: center;
-}
-
-.self-center {
-  align-self: center;
-}
-
-.bg-center {
-  background-position: center;
-}
-
-.object-center {
-  -o-object-position: center;
-     object-position: center;
-}
-
 .p-\[15mm\] {
   padding: 15mm;
-}
-
-.p-\[1\] {
-  padding: 1;
-}
-
-.p-\[15\] {
-  padding: 15;
-}
-
-.pl-\[2em\] {
-  padding-left: 2em;
 }
 
 .text-center {
@@ -609,4 +514,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[15pt\] {
   font-size: 15pt;
+}
+
+.text-\[19pt\] {
+  font-size: 19pt;
+}
+
+.text-\[pt\] {
+  font-size: pt;
 }

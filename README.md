@@ -36,3 +36,8 @@ Write math formula with katex.
 ## `math.js`
 
 Do some basic math calculate.
+
+## Themes
+
+Theme templates from [plotly chart studio](https://chart-studio.plotly.com/create/#/)
+

@@ -1,3 +1,5 @@
+import { themes } from '../plotlyjs/theme.js'
+
 let baseLayout_dark = {
     font: {
         color: "#ffffff"
@@ -30,13 +32,14 @@ function plot_main(event) {
     math.config({
         matrix: 'Array'  // Choose 'Matrix' (default) or 'Array'
     })
-    let template = Plotly.makeTemplate({ layout: baseLayout_dark });
+    let template = themes.PLOTLY_DARK;
     if (event.type == "DOMContentLoaded") {
-        template = Plotly.makeTemplate({ layout: baseLayout_dark });
+        template = themes.PLOTLY_DARK;
     }
     else if (event.type == "beforeprint") {
-        template = Plotly.makeTemplate({ layout: baseLayout_light });
+        template = themes.PLOTLY_WHITE;
     }
+
     Plotly.newPlot(
         document.getElementById("plot_1"),
         [{
@@ -54,7 +57,9 @@ function plot_main(event) {
             title: "plotly demo",
         }
     )
-}
+};
+
+
 document.addEventListener("DOMContentLoaded", plot_main);
 window.addEventListener("beforeprint", plot_main);
 
