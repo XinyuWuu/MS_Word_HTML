@@ -41,3 +41,11 @@ Do some basic math calculate.
 
 Theme templates from [plotly chart studio](https://chart-studio.plotly.com/create/#/)
 
+## Separate `src` and other files
+
+just copy `separate use` diractory. And run command to use `browser-sync` to server the file.
+
+```
+yarn dlx tailwindcss -i ./tailwindInput.css -o ./src/style.css --watch
+browser-sync start --config bs-config.js
+```
