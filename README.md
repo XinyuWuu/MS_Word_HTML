@@ -13,10 +13,9 @@ Get it from [cognitom/paper-css](https://github.com/cognitom/paper-css)
 ## install and use tailwindcss for fast styling
 
 ```
-yarn init
-yarn install
-yarn add -D tailwindcss
-yarn tailwindcss -i ./tailwindInput.css -o ./src/style.css --watch
+npm install -D tailwindcss
+npx tailwindcss init
+npx tailwindcss -i ./tailwindInput.css -o ./src/style.css --watch
 ```
 
 Turn on auto save in your edit to live compile.
@@ -46,6 +45,6 @@ Theme templates from [plotly chart studio](https://chart-studio.plotly.com/creat
 just copy `separate use` diractory. And run command to use `browser-sync` to server the file.
 
 ```
-yarn dlx tailwindcss -i ./tailwindInput.css -o ./src/style.css --watch
+npx tailwindcss -i ./tailwindInput.css -o ./src/style.css --watch
 browser-sync start --config bs-config.js
 ```

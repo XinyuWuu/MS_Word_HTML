@@ -1,5 +1,4 @@
 {
-    "ros.distro": "noetic",
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 200
 }
