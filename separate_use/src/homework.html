@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- MS Word like style -->
+    <link rel="stylesheet" href="../MS_Word/ms_word.css">
+    <link rel="stylesheet" href="../paper-css-master/paper.css">
+    <style>
+        @page {
+            size: A4
+        }
+    </style>
+    <!-- katex -->
+    <link rel="stylesheet" href="../katex/katex.min.css">
+    <script src="../katex/katex.min.js"></script>
+    <script src="../katex/contrib/auto-render.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    { left: '$$', right: '$$', display: true },
+                    { left: '$', right: '$', display: false },
+                    { left: '\\(', right: '\\)', display: false },
+                    { left: '\\[', right: '\\]', display: true },
+                    { left: "\\begin{equation}", right: "\\end{equation}", display: true },
+                    { left: "\\begin{split}", right: "\\end{split}", display: true },
+                    { left: "\\begin{align}", right: "\\end{align}", display: true },
+                    { left: "\\begin{alignat}", right: "\\end{alignat}", display: true },
+                    { left: "\\begin{gather}", right: "\\end{gather}", display: true },
+                    { left: "\\begin{CD}", right: "\\end{CD}", display: true },
+                ],
+                throwOnError: false
+            });
+        });
+    </script>
+    <!-- code highligh from highlight.js -->
+    <link rel="stylesheet" media="print" href="../highlight/styles/github.min.css">
+    <link rel="stylesheet" media="screen" href="../highlight/styles/github-dark.min.css">
+    <script src="../highlight/highlight.js"></script>
+    <script src="../highlight/languages/bash.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <!-- for dark preview-->
+    <style>
+        @media screen {
+
+            html,
+            body {
+                background: rgb(53, 53, 53) !important;
+            }
+
+            .sheet,
+            .page {
+                background: black !important;
+                color: white !important;
+                box-shadow: 0 .1mm 10mm rgb(8, 8, 8);
+            }
+        }
+    </style>
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="style.css">
+    <!-- math.js chat.js and plotly.js -->
+    <script src="../mathjs/math.js"></script>
+    <script src="../chartjs/chart.min.js"></script>
+    <script src="../plotlyjs/plotly.min.js"></script>
+    <script type="module" src="plot.js"></script>
+</head>
+
+<body class="A4">
+    <div class="sheet p-[15mm]">
+        <pre><code>
+    browser-sync start --config bs-config.js
+    yarn dlx tailwindcss -i tailwindInput.css -o src/style.css --watch
+    google-chrome --app=http://127.0.0.1:3000 --new-window --incognito
+</code></pre>
+        <div id="plot_1"></div>
+    </div>
+</body>
+
+</html>
