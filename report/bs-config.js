@@ -18,7 +18,7 @@ module.exports = {
     "open": false,
     "watch": true,
     "server": {
-        "baseDir": ["src", "/home/wuxinyu/Documents/MS_Word_HTML"],
+        "baseDir": [".","src", "/home/wuxinyu/Documents/MS_Word_HTML"],
         "index": "homework.html"
     },
     "plugins": [

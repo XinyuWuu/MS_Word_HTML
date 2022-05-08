@@ -67,13 +67,54 @@
     <script src="../chartjs/chart.min.js"></script>
     <script src="../plotlyjs/plotly.min.js"></script>
     <script type="module" src="plot.js"></script>
+    <style>
+        @font-face {
+            font-family: EN1;
+            src: url("font/DancingScript-VariableFont_wght.ttf");
+        }
+
+        @font-face {
+            font-family: CN4;
+            src: url("font/7lj3k6ptwsy13h9ar4yy.ttf");
+        }
+
+        @font-face {
+            font-family: CN2;
+            src: url("font/9p4trjqal6funscq2crx.ttf");
+        }
+
+        @font-face {
+            font-family: CN3;
+            src: url("font/xvb1yhc0n4zmw5bdscg6.ttf");
+        }
+
+        @font-face {
+            font-family: CN1;
+            src: url("font/e1tg6749pio039r20q6t.ttf");
+        }
+
+        @font-face {
+            font-family: CN5;
+            src: url("font/eys5vouykn8piek0fgul.ttf");
+        }
+
+        @font-face {
+            font-family: CN6;
+            src: url("font/hud57i9ima7op0xchc8j.ttf");
+        }
+
+        @font-face {
+            font-family: CN7;
+            src: url("font/t2jw0xs1ful4zrnf18me.ttf");
+        }
+    </style>
 </head>
 
 <body class="A4">
     <div class="sheet p-[15mm]">
         <pre><code>
     browser-sync start --config bs-config.js
-    npm tailwindcss -i tailwindInput.css -o src/style.css --watch
+    npx tailwindcss -i tailwindInput.css -o src/style.css --watch
     google-chrome --app=http://127.0.0.1:3000 --new-window --incognito
 </code></pre>
         <div id="plot_1"></div>
