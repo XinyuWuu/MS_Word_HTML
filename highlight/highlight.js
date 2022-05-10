@@ -1,5 +1,5 @@
 /*!
-  Highlight.js v11.4.0 (git: 2d0e7c1094)
+  Highlight.js v11.5.1 (git: b8f233c8e2)
   (c) 2006-2022 Ivan Sagalaev and other contributors
   License: BSD-3-Clause
  */
@@ -1558,7 +1558,7 @@ var hljs = (function () {
       return mode;
     }
 
-    var version = "11.4.0";
+    var version = "11.5.1";
 
     class HTMLInjectionError extends Error {
       constructor(reason, html) {
@@ -1835,8 +1835,8 @@ var hljs = (function () {
          */
         function emitMultiClass(scope, match) {
           let i = 1;
-          // eslint-disable-next-line no-undefined
-          while (match[i] !== undefined) {
+          const max = match.length - 1;
+          while (i <= max) {
             if (!scope._emit[i]) { i++; continue; }
             const klass = language.classNameAliases[scope[i]] || scope[i];
             const text = match[i];
